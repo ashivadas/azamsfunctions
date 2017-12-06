@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "submit-job", "submit-job\submit-job.csproj", "{EC0432AF-E056-458C-8631-24FBE6B39DC2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FF395AD5-A4BE-4ECB-981F-2DCF07FB2E93} = {FF395AD5-A4BE-4ECB-981F-2DCF07FB2E93}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedUtils", "shared\SharedUtils.csproj", "{FF395AD5-A4BE-4ECB-981F-2DCF07FB2E93}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "publish-asset", "publish-asset\publish-asset.csproj", "{F8E1E2CA-3F59-48DF-9A64-9E987A2A0AB5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "check-task-status", "check-task-status\check-task-status.csproj", "{AADE41E9-E09D-4F2C-A697-7FC1D6950241}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "check-job-status", "check-job-status\check-job-status.csproj", "{25077DB4-C356-41D9-988B-3C08DA219D5F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "add-textfile-to-asset", "add-textfile-to-asset\add-textfile-to-asset.csproj", "{50B7810C-DFF1-449C-BB00-9AA858DF2F7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC0432AF-E056-458C-8631-24FBE6B39DC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC0432AF-E056-458C-8631-24FBE6B39DC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC0432AF-E056-458C-8631-24FBE6B39DC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC0432AF-E056-458C-8631-24FBE6B39DC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF395AD5-A4BE-4ECB-981F-2DCF07FB2E93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF395AD5-A4BE-4ECB-981F-2DCF07FB2E93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF395AD5-A4BE-4ECB-981F-2DCF07FB2E93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF395AD5-A4BE-4ECB-981F-2DCF07FB2E93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8E1E2CA-3F59-48DF-9A64-9E987A2A0AB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8E1E2CA-3F59-48DF-9A64-9E987A2A0AB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8E1E2CA-3F59-48DF-9A64-9E987A2A0AB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8E1E2CA-3F59-48DF-9A64-9E987A2A0AB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AADE41E9-E09D-4F2C-A697-7FC1D6950241}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AADE41E9-E09D-4F2C-A697-7FC1D6950241}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AADE41E9-E09D-4F2C-A697-7FC1D6950241}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AADE41E9-E09D-4F2C-A697-7FC1D6950241}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25077DB4-C356-41D9-988B-3C08DA219D5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25077DB4-C356-41D9-988B-3C08DA219D5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25077DB4-C356-41D9-988B-3C08DA219D5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25077DB4-C356-41D9-988B-3C08DA219D5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50B7810C-DFF1-449C-BB00-9AA858DF2F7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50B7810C-DFF1-449C-BB00-9AA858DF2F7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50B7810C-DFF1-449C-BB00-9AA858DF2F7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50B7810C-DFF1-449C-BB00-9AA858DF2F7F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B3BBB062-1051-4B60-8A03-0A7AB2FA8758}
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\TransientFaultHandling.Core.5.1.1209.1\lib\NET4
+	EndGlobalSection
+EndGlobal
