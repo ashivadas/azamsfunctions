@@ -99,9 +99,9 @@ The project has the following AZ functions
             assetId : "",
             taskId : ""
         }
- }
-
+    }
 </code>
+
 ### 2. CheckTaskStatus
 
 <code>
