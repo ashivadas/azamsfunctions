@@ -1,6 +1,16 @@
+---
+services: media-services,functions
+platforms: dotnet
+author: ashivadas
+---
+# azamsfunctions
+
+## Introduction
+
 This project is an example to convert Azure Media Services function written as scripts to library code.
 
 The original samples location is here:
+
 
 https://github.com/Azure-Samples/media-services-dotnet-functions-integration/tree/master/media-functions-for-logic-app
 
@@ -11,8 +21,8 @@ https://blogs.msdn.microsoft.com/appserviceteam/2017/03/16/publishing-a-net-clas
 
 The project has the following AZ functions
 
-1. SubmitJob - used to submit an encoding job.
-
+### 1. SubmitJob - used to submit an encoding job.
+`
 Input:
 {
     "assetId" : "nb:cid:UUID:2d0d78a2-685a-4b14-9cf0-9afb0bb5dbfc", // Mandatory, Id of the source asset
@@ -89,9 +99,11 @@ Output:
             taskId : ""
         }
  }
+`
 
-2. CheckTaskStatus
+### 2. CheckTaskStatus
 
+`
 Input:
 {
     "jobId" : "nb:jid:UUID:1ceaa82f-2607-4df9-b034-cd730dad7097", // Mandatory, Id of the source asset
@@ -118,9 +130,12 @@ Output:
         "amsRESTAPIEndpoint" = "http://....."
     }
  }
+ 
+ `
 
-3. CheckJobStatus
+### 3. CheckJobStatus
 
+`
 Input:
 {
     "jobId" : "nb:jid:UUID:1ceaa82f-2607-4df9-b034-cd730dad7097", // Mandatory, Id of the source asset
@@ -146,8 +161,12 @@ Output:
         "amsRESTAPIEndpoint" = "http:/...."
     }
  }
+ 
+ `
 
-4. AddTextFileToAsset
+### 4. AddTextFileToAsset
+
+`
 Input:
 {
     "document" : "", // content of the text file to create
@@ -160,8 +179,11 @@ Output:
 {
     
 }
+`
 
-5. PublishAsset
+### 5. PublishAsset
+
+`
 Input:
 {
     "assetId" : "nb:cid:UUID:2d0d78a2-685a-4b14-9cf0-9afb0bb5dbfc", // Mandatory, Id of the source asset
@@ -173,7 +195,7 @@ Output:
     smoothUrl : "", // Url for the published asset (contains name.ism/manifest at the end) for dynamic packaging
     pathUrl : ""    // Url of the asset (path)
 }
-
+`
 
 
 
